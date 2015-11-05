@@ -1,9 +1,9 @@
 class Project
-  attr_reader :current_funding, :target
+  attr_reader :funding, :target
   attr_accessor :name
 
-  def initialize(name, initial=0, target)
-    @name            = name
+  def initialize(name, target, initial=0)
+    @name    = name
     @funding = initial
     @target  = target
   end
